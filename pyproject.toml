@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "ccsh"
+version = "0.0.1"
+description = "A simple shell"
+authors = ["hattiza <quiet.iron8712@fastmail.com>"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+readme = "README.md"
+license = "UNLICENSE.md"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.setuptools.dynamic]
+dependencies = {file = ["requirements.txt"]}
